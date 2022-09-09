@@ -1,7 +1,9 @@
 package com.example.spring_data_jpa.entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import javax.persistence.*;
 import java.math.BigDecimal;
-@Entity
+@Data
 @Table(
         name = "product_Desc",
         schema = "spring_Jpa",
@@ -17,6 +19,7 @@ import java.math.BigDecimal;
         }
 
 )
+@Entity
 public class Product {
 
     /* @GeneratedValue(
